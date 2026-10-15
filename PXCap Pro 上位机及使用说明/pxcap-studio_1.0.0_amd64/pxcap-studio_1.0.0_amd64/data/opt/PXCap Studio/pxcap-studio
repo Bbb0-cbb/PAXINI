@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_PATH="$(readlink -f -- "$0")"
+APPDIR="$(CDPATH= cd -- "$(dirname -- "$SCRIPT_PATH")" && pwd)"
+SDK_LIB="$APPDIR/resources/lib/pxhandsdk"
+SDK_CORE="$SDK_LIB/core"
+
+if [ -n "${LD_LIBRARY_PATH:-}" ]; then
+  export LD_LIBRARY_PATH="$SDK_LIB:$SDK_CORE:$LD_LIBRARY_PATH"
+else
+  export LD_LIBRARY_PATH="$SDK_LIB:$SDK_CORE"
+fi
+
+exec "$APPDIR/pxcap-studio-bin" "$@"

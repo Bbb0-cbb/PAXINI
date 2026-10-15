@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="00-三指数采LEFT">
+  <link
+    name="left_palm_link">
+    <inertial>
+      <origin
+        xyz="0.0258768124235469 -0.0031150284839804 -0.0116070202796338"
+        rpy="0 0 0" />
+      <mass
+        value="0.356406611517077" />
+      <inertia
+        ixx="0.000493999596284697"
+        ixy="-2.99797713977764E-05"
+        ixz="2.26791503682634E-05"
+        iyy="0.000256281802962528"
+        iyz="-2.7489730747099E-05"
+        izz="0.000421596491093993" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_index_link_0">
+    <inertial>
+      <origin
+        xyz="0.0274814038274958 0.00966827418823052 -0.00129003207291745"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108891251464598" />
+      <inertia
+        ixx="4.11658280758668E-06"
+        ixy="-2.17247963901686E-06"
+        ixz="-1.11393227066919E-07"
+        iyy="5.47172803026463E-06"
+        iyz="-1.40659417127191E-09"
+        izz="6.09182321179127E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.0635 -0.03615 -0.011142"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_index_link_0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.872"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_index_link_1">
+    <inertial>
+      <origin
+        xyz="0.0287220681418747 0.00885407907681118 -0.000255352977047735"
+        rpy="0 0 0" />
+      <mass
+        value="0.0129565533870136" />
+      <inertia
+        ixx="2.29943319674391E-06"
+        ixy="-8.249724323754E-07"
+        ixz="-2.29010866544463E-09"
+        iyy="3.60951301531678E-06"
+        iyz="-9.77328433545978E-09"
+        izz="3.25879789845858E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.055084 0.021117 0.0030499"
+      rpy="0 0 0" />
+    <parent
+      link="left_index_link_0" />
+    <child
+      link="left_index_link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.134"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_index_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="3.49622915560011E-05 0.0145212379659687 0.00347953522815087"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480461087165" />
+      <inertia
+        ixx="4.45935904144523E-07"
+        ixy="-1.51983080035682E-10"
+        ixz="7.43972423115389E-10"
+        iyy="2.80858590947786E-07"
+        iyz="4.64897560749319E-10"
+        izz="6.69746460671393E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.0118651814957937 0.0186430765917419 0"
+      rpy="2.7993800067543 -1.57079384138127 2.0346564213328" />
+    <parent
+      link="left_index_link_1" />
+    <child
+      link="left_index_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_index_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="0.000505538510476855 0.00782749922774659 0.00347842272889237"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192391303928" />
+      <inertia
+        ixx="3.6857238294293E-08"
+        ixy="-6.79936601549096E-10"
+        ixz="-9.75863169233139E-10"
+        iyy="2.20803836123416E-08"
+        iyz="1.81175500439773E-10"
+        izz="4.48951286644958E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_index_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_index_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.0483708695752729 0.0234099720766731 0.00786552963598491"
+      rpy="-1.57079632701369 0 0.121642494345551" />
+    <parent
+      link="left_index_link_1" />
+    <child
+      link="left_index_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_middle_link_0">
+    <inertial>
+      <origin
+        xyz="0.0310629047997937 0.014842099649051 0.00303898257739993"
+        rpy="0 0 0" />
+      <mass
+        value="0.0166599506007476" />
+      <inertia
+        ixx="1.44450735417579E-05"
+        ixy="-3.95502509404073E-06"
+        ixz="-1.61983858782473E-07"
+        iyy="1.50842888072551E-05"
+        iyz="-3.19866408273342E-07"
+        izz="1.07321104349084E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.0635 0.01955 -0.011142"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_middle_link_0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.733"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_middle_link_1">
+    <inertial>
+      <origin
+        xyz="0.0304113438447169 0.00969509124958745 0.000855644633900504"
+        rpy="0 0 0" />
+      <mass
+        value="0.0324752975007606" />
+      <inertia
+        ixx="1.53677310805366E-05"
+        ixy="-3.32565832812073E-06"
+        ixz="6.16979606318017E-07"
+        iyy="1.9849745771778E-05"
+        iyz="4.92267008797332E-07"
+        izz="1.15918238483374E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.059926 0.022456 -0.00095006"
+      rpy="0 0 0" />
+    <parent
+      link="left_middle_link_0" />
+    <child
+      link="left_middle_link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.134"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="left_middle_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="3.49592274369315E-05 0.0145212352277804 0.00347953524953015"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480416805198" />
+      <inertia
+        ixx="4.45935786350776E-07"
+        ixy="-1.51887823026144E-10"
+        ixz="7.43981864959522E-10"
+        iyy="2.8085849016782E-07"
+        iyz="4.64911274794792E-10"
+        izz="6.69746237446894E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.0140102944410583 0.0192525612830661 0.010881349477487"
+      rpy="2.94802031114936 -1.57078921698882 1.93967518991013" />
+    <parent
+      link="left_middle_link_1" />
+    <child
+      link="left_middle_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_middle_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="0.000505538288590124 0.00782749922745518 0.00347842275956811"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192385796781" />
+      <inertia
+        ixx="3.68572363855513E-08"
+        ixy="-6.79936545221938E-10"
+        ixz="-9.75863204571727E-10"
+        iyy="2.20803814308845E-08"
+        iyz="1.81175456242806E-10"
+        izz="4.48951246437291E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.0515634445142943 0.0262592679015717 0.0188313020339905"
+      rpy="-1.57079632679471 0 0.175270195944973" />
+    <parent
+      link="left_middle_link_1" />
+    <child
+      link="left_middle_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_middle_tactile_link_2">
+    <inertial>
+      <origin
+        xyz="0.000505538288590346 0.0078274992274549 0.003478422759568"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192385796784" />
+      <inertia
+        ixx="3.6857236385552E-08"
+        ixy="-6.79936545221141E-10"
+        ixz="-9.75863204571679E-10"
+        iyy="2.20803814308852E-08"
+        iyz="1.81175456243139E-10"
+        izz="4.48951246437304E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_tactile_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.0515634445142945 0.0262592679015716 -0.00669132650520951"
+      rpy="-1.57079632679471 0 0.175270195944973" />
+    <parent
+      link="left_middle_link_1" />
+    <child
+      link="left_middle_tactile_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_middle_tactile_link_3">
+    <inertial>
+      <origin
+        xyz="3.49768730835143E-05 0.0145212446651881 0.00347953670451839"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480167685124" />
+      <inertia
+        ixx="4.45935760333256E-07"
+        ixy="-1.51907159865965E-10"
+        ixz="7.43840524890211E-10"
+        iyy="2.80858397262575E-07"
+        iyz="4.64697489934812E-10"
+        izz="6.69746171025565E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_middle_tactile_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_middle_tactile_joint_3"
+    type="fixed">
+    <origin
+      xyz="0.0425658801080713 0.0243102821081043 -0.0144912369177558"
+      rpy="-2.94802031501667 1.57078921700443 -1.20191746754585" />
+    <parent
+      link="left_middle_link_1" />
+    <child
+      link="left_middle_tactile_link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_palm_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="3.50398453926037E-05 0.0145213408280548 0.00347952513071381"
+        rpy="0 0 0" />
+      <mass
+        value="0.0054648442114367" />
+      <inertia
+        ixx="4.45942598370465E-07"
+        ixy="-1.57221478010478E-10"
+        ixz="7.44320739113101E-10"
+        iyy="2.80864871335954E-07"
+        iyz="4.65373509599073E-10"
+        izz="6.69759379354068E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_palm_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.049874 0.038639 -0.06158"
+      rpy="-2.8436 -1.0252 -0.25876" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_palm_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_palm_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="3.50440672899355E-05 0.0145213470138159 0.00347952451449363"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546484652631868" />
+      <inertia
+        ixx="4.4594297980464E-07"
+        ixy="-1.57524937166459E-10"
+        ixz="7.44350433206738E-10"
+        iyy="2.80865234763327E-07"
+        iyz="4.65401437681058E-10"
+        izz="6.69760120167389E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_palm_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.055389 -0.0077003 -0.058944"
+      rpy="-2.0966 0.15296 -1.5728" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_palm_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_palm_tactile_link_2">
+    <inertial>
+      <origin
+        xyz="3.50137612000756E-05 0.0145213028300383 0.00347953289046932"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546481266811073" />
+      <inertia
+        ixx="4.45937498698E-07"
+        ixy="-1.53277139680346E-10"
+        ixz="7.44141359097995E-10"
+        iyy="2.80860626755564E-07"
+        iyz="4.65168853025171E-10"
+        izz="6.69750097616741E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_tactile_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_tactile_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_palm_tactile_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.041943 0.013976 -0.092759"
+      rpy="1.0146 1.4106 0.96011" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_palm_tactile_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_palm_thumb_link_0">
+    <inertial>
+      <origin
+        xyz="3.50440672901575E-05 0.0145213470138164 0.00347952451449363"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546484652631849" />
+      <inertia
+        ixx="4.45942979804628E-07"
+        ixy="-1.57524937164086E-10"
+        ixz="7.44350433206305E-10"
+        iyy="2.80865234763318E-07"
+        iyz="4.65401437680856E-10"
+        izz="6.69760120167371E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_thumb_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_thumb_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_palm_thumb_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.055395 -0.035272 -0.063088"
+      rpy="-2.0966 0.15296 -1.5728" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_palm_thumb_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_palm_thumb_link_1">
+    <inertial>
+      <origin
+        xyz="3.4972748826162E-05 0.0145212477608816 0.00347953515480248"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480639077072" />
+      <inertia
+        ixx="4.459363558133E-07"
+        ixy="-1.52346715541392E-10"
+        ixz="7.4395698029171E-10"
+        iyy="2.80858981029675E-07"
+        iyz="4.64867213811427E-10"
+        izz="6.69747323170436E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_thumb_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_thumb_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_palm_thumb_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.044787 -0.032544 -0.098894"
+      rpy="-0.74997 0.0013743 -1.5752" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_palm_thumb_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_palm_thumb_link_2">
+    <inertial>
+      <origin
+        xyz="0.000505538433590136 0.00782749922774795 0.00347842273797028"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192389385039" />
+      <inertia
+        ixx="3.68572376215981E-08"
+        ixy="-6.79936580635723E-10"
+        ixz="-9.75863174887626E-10"
+        iyy="2.2080382854995E-08"
+        iyz="1.81175484410175E-10"
+        izz="4.48951272623446E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_thumb_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采LEFT/meshes/left_palm_thumb_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_palm_thumb_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.068610406913842 -0.0406171332696784 -0.12537367572168"
+      rpy="0 1.25610650763876 0" />
+    <parent
+      link="left_palm_link" />
+    <child
+      link="left_palm_thumb_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

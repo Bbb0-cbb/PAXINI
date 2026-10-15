@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PXCap Studio
+Exec="/opt/PXCap Studio/pxcap-studio" %U
+Terminal=false
+Type=Application
+Icon=pxcap-studio
+StartupWMClass=PXCap Studio
+Comment=PXCap 数据采集手套与 PXDex 执行器一体化上位机
+Categories=Utility;

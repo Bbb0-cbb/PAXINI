@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="00-三指数采Right">
+  <link
+    name="rihgt_palm_link">
+    <inertial>
+      <origin
+        xyz="0.0259207316517696 0.00362321709092346 -0.0124838331672217"
+        rpy="0 0 0" />
+      <mass
+        value="0.351366112673679" />
+      <inertia
+        ixx="0.000492293447017383"
+        ixy="2.94209797364862E-05"
+        ixz="2.19318649143276E-05"
+        iyy="0.000254312960215288"
+        iyz="2.89602278597171E-05"
+        izz="0.000419563997039064" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/rihgt_palm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/rihgt_palm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_index_link_0">
+    <inertial>
+      <origin
+        xyz="0.0274829155976362 0.0096697599704284 0.00168195444934461"
+        rpy="0 0 0" />
+      <mass
+        value="0.0108904919342611" />
+      <inertia
+        ixx="4.11681824447668E-06"
+        ixy="-2.17256491807037E-06"
+        ixz="1.11838784702556E-07"
+        iyy="5.4730902327275E-06"
+        iyz="1.33876574944089E-09"
+        izz="6.09269967019155E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.0635 0.03575 -0.011142"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_index_link_0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.872"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_index_link_1">
+    <inertial>
+      <origin
+        xyz="0.0288010819996949 0.00891269761895302 0.000191342343907077"
+        rpy="0 0 0" />
+      <mass
+        value="0.0130225692194557" />
+      <inertia
+        ixx="2.31171538679058E-06"
+        ixy="-8.35662483705392E-07"
+        ixz="3.93018789245739E-08"
+        iyy="3.64459989628161E-06"
+        iyz="1.02323385320338E-08"
+        izz="3.29315061588183E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.055084 0.021117 -0.0026497"
+      rpy="0 0 0" />
+    <parent
+      link="right_index_link_0" />
+    <child
+      link="right_index_link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.134"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_index_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-0.000243019526492836 0.0376199313040961 0.00378025028558804"
+        rpy="0 0 0" />
+      <mass
+        value="0.0013719239130393" />
+      <inertia
+        ixx="2.20803876572201E-08"
+        ixy="6.79958842703466E-10"
+        ixz="-1.81340186989388E-10"
+        iyy="3.68572271282293E-08"
+        iyz="-9.7581837917052E-10"
+        izz="4.48951357856829E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.0117162851245307 0.0186248302170689 0"
+      rpy="-0.155630906748269 -1.57078921698882 -1.29351797234461" />
+    <parent
+      link="right_index_link_1" />
+    <child
+      link="right_index_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_index_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="-0.0225931530475054 0.00754949407703909 0.00317759130448192"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480460443092" />
+      <inertia
+        ixx="2.80858585010333E-07"
+        ixy="1.51800747232245E-10"
+        ixz="4.62973063770163E-10"
+        iyy="4.45935913858166E-07"
+        iyz="-7.45543060908416E-10"
+        izz="6.69746452725368E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_index_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.0485197611763055 0.0234281734828397 0.00758446090564666"
+      rpy="-1.57079632657568 0 0.121642494345551" />
+    <parent
+      link="right_index_link_1" />
+    <child
+      link="right_index_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_link_0">
+    <inertial>
+      <origin
+        xyz="0.0310538733738566 0.01484193817424 -0.00303750829145409"
+        rpy="0 0 0" />
+      <mass
+        value="0.0166522942834348" />
+      <inertia
+        ixx="1.44407918818334E-05"
+        ixy="-3.95456094692212E-06"
+        ixz="1.59934825242847E-07"
+        iyy="1.50758914688043E-05"
+        iyz="3.19161223536309E-07"
+        izz="1.07277038407095E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.0635 -0.01955 -0.011142"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_middle_link_0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.733"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_middle_link_1">
+    <inertial>
+      <origin
+        xyz="0.0305186830857014 0.00966285670822536 -0.00116415553921766"
+        rpy="0 0 0" />
+      <mass
+        value="0.0324372523486031" />
+      <inertia
+        ixx="1.54451242770841E-05"
+        ixy="-3.31253385242919E-06"
+        ixz="-7.35399660497705E-07"
+        iyy="1.99359258445517E-05"
+        iyz="-5.07749980114819E-07"
+        izz="1.15840832064454E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.059926 0.022456 0.00095006"
+      rpy="0 0 0" />
+    <parent
+      link="right_middle_link_0" />
+    <child
+      link="right_middle_link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="1.134"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="3.495921248578E-05 0.0145212352058581 0.00347953525173927"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480415925401" />
+      <inertia
+        ixx="4.45935784870406E-07"
+        ixy="-1.51886678820851E-10"
+        ixz="7.43981770501953E-10"
+        iyy="2.80858488793641E-07"
+        iyz="4.6491115918128E-10"
+        izz="6.69746234605266E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.014010359486295 0.0192523930228056 0.0144912765806258"
+      rpy="-0.193572346941053 -1.57078921698882 -1.20191745917926" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="0.000505538288590124 0.00782749922745499 0.00347842275956811"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192385796788" />
+      <inertia
+        ixx="3.68572363855538E-08"
+        ixy="-6.79936545220698E-10"
+        ixz="-9.75863204571898E-10"
+        iyy="2.20803814308857E-08"
+        iyz="1.81175456242762E-10"
+        izz="4.4895124643732E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.0515634445142927 0.0262592679015732 0.0222913170417692"
+      rpy="-1.57079632679487 0 0.175270195944701" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_2">
+    <inertial>
+      <origin
+        xyz="0.000505538288589458 0.00782749922745497 0.00347842275956806"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192385796782" />
+      <inertia
+        ixx="3.68572363855514E-08"
+        ixy="-6.79936545220568E-10"
+        ixz="-9.75863204571784E-10"
+        iyy="2.20803814308845E-08"
+        iyz="1.81175456242822E-10"
+        izz="4.48951246437292E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.0514157425952833 0.0262331117715232 -0.00338131149740951"
+      rpy="-1.57079632679487 0 0.175270195945644" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_tactile_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_3">
+    <inertial>
+      <origin
+        xyz="3.49768894889885E-05 0.014521244688591 0.00347953670219586"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480168620203" />
+      <inertia
+        ixx="4.45935761887413E-07"
+        ixy="-1.51908373587817E-10"
+        ixz="7.43840622848644E-10"
+        iyy="2.80858398728401E-07"
+        iyz="4.64697607617533E-10"
+        izz="6.69746174033287E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_middle_tactile_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_3"
+    type="fixed">
+    <origin
+      xyz="0.0425658490507275 0.0243104574512923 -0.0110313891403747"
+      rpy="0.193572348700587 1.57078921700443 1.93967519617118" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_tactile_link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="3.50397067234165E-05 0.0145213412100931 0.00347952512801752"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546484422086846" />
+      <inertia
+        ixx="4.45942599787244E-07"
+        ixy="-1.57223265344361E-10"
+        ixz="7.4432924030948E-10"
+        iyy="2.80864871274256E-07"
+        iyz="4.6537025313753E-10"
+        izz="6.69759380686943E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_palm_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_palm_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.050025 -0.038896 -0.061278"
+      rpy="-2.8436 1.0252 -2.8828" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_palm_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="3.50441578443189E-05 0.014521346749569 0.00347952451705891"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546484651721438" />
+      <inertia
+        ixx="4.45942978403901E-07"
+        ixy="-1.57523503059717E-10"
+        ixz="7.44344695124084E-10"
+        iyy="2.80865234563667E-07"
+        iyz="4.65403589299371E-10"
+        izz="6.69760118587487E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_palm_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_palm_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.055539 0.0080366 -0.058733"
+      rpy="-2.0966 -0.15296 -1.5688" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_palm_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_2">
+    <inertial>
+      <origin
+        xyz="3.50133238552486E-05 0.0145213050072072 0.00347953304527349"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546481247756395" />
+      <inertia
+        ixx="4.45937493950135E-07"
+        ixy="-1.53285501645719E-10"
+        ixz="7.44198597951024E-10"
+        iyy="2.80860616038752E-07"
+        iyz="4.6514995915148E-10"
+        izz="6.69750090006195E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_palm_tactile_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_palm_tactile_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.041956 -0.013718 -0.093096"
+      rpy="1.0146 -1.4106 2.1815" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_palm_tactile_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_thumb_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="3.50441578443189E-05 0.0145213467495686 0.00347952451705891"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546484651721439" />
+      <inertia
+        ixx="4.45942978403894E-07"
+        ixy="-1.575235030575E-10"
+        ixz="7.44344695124575E-10"
+        iyy="2.80865234563665E-07"
+        iyz="4.65403589302402E-10"
+        izz="6.69760118587477E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_thumb_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_thumb_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.05547 0.035441 -0.062982"
+      rpy="-2.0966 -0.15296 -1.5688" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_thumb_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_thumb_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="3.49727683668869E-05 0.0145212477671839 0.00347953515260169"
+        rpy="0 0 0" />
+      <mass
+        value="0.00546480639952478" />
+      <inertia
+        ixx="4.45936357280987E-07"
+        ixy="-1.52347696362374E-10"
+        ixz="7.43956695491796E-10"
+        iyy="2.8085898227581E-07"
+        iyz="4.64867479293713E-10"
+        izz="6.69747325871499E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_thumb_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_thumb_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.044567 0.032694 -0.09869"
+      rpy="-0.74997 -0.0013743 -1.5664" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_thumb_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_thumb_tactile_link_2">
+    <inertial>
+      <origin
+        xyz="0.000505538433615116 0.0078274992277174 0.00347842273798826"
+        rpy="0 0 0" />
+      <mass
+        value="0.00137192389385746" />
+      <inertia
+        ixx="3.6857237621947E-08"
+        ixy="-6.79936580441005E-10"
+        ixz="-9.75863174969832E-10"
+        iyy="2.20803828552745E-08"
+        iyz="1.81175484459874E-10"
+        izz="4.48951272629028E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_thumb_tactile_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://00-三指数采Right/meshes/right_thumb_tactile_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_tactile_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.0687434044013411 0.0251671431088643 -0.125695763438785"
+      rpy="0 1.25610650763371 0" />
+    <parent
+      link="rihgt_palm_link" />
+    <child
+      link="right_thumb_tactile_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

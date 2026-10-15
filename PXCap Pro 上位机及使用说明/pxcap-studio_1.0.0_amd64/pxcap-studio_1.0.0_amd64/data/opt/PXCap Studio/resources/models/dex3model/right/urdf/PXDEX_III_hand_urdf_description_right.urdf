@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="PXDEX_III_hand_urdf_description_right">
+  <link
+    name="right_palm_link">
+    <inertial>
+      <origin
+        xyz="0.00199512211459596 0.015344770111416 -0.031440997049933"
+        rpy="0 0 0" />
+      <mass
+        value="0.175953695476327" />
+      <inertia
+        ixx="0.000177619535327553"
+        ixy="-1.93072566367363E-05"
+        ixz="9.58182331763821E-06"
+        iyy="0.000248357635704226"
+        iyz="3.58080804630526E-05"
+        izz="0.0003244880359877" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_index_link_0">
+    <inertial>
+      <origin
+        xyz="0.00657131814600964 0.00156134407443956 -0.0314285458507409"
+        rpy="0 0 0" />
+      <mass
+        value="0.017571408075991" />
+      <inertia
+        ixx="4.42390555375272E-06"
+        ixy="-4.30777009075676E-07"
+        ixz="2.45040719409335E-07"
+        iyy="6.68883273621015E-06"
+        iyz="3.15885603834581E-07"
+        izz="3.80998913765374E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_index_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_index_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.026464 -0.022698 -0.0638"
+      rpy="0 0 0" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_index_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.05236"
+      upper="1.0123"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_index_link_1">
+    <inertial>
+      <origin
+        xyz="0.00542804072503222 0.00594576737184221 -0.0239354679408568"
+        rpy="0 0 0" />
+      <mass
+        value="0.0130049861283684" />
+      <inertia
+        ixx="2.93560118176571E-06"
+        ixy="-2.28207952335738E-09"
+        ixz="-6.8905637445597E-08"
+        iyy="3.7558358497055E-06"
+        iyz="4.15947146777478E-07"
+        izz="2.41150002109685E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_index_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_index_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.001325 0.0044875 -0.054817"
+      rpy="0 0 0" />
+    <parent
+      link="right_index_link_0" />
+    <child
+      link="right_index_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.05236"
+      upper="0.73304"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_index_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-3.86435477506275E-05 0.0199786316890249 0.00323567107396761"
+        rpy="0 0 0" />
+      <mass
+        value="0.00704184068415921" />
+      <inertia
+        ixx="1.12588385077687E-06"
+        ixy="5.16656168389926E-09"
+        ixz="1.40632470944867E-10"
+        iyy="3.36153396506003E-07"
+        iyz="-1.27210166468673E-09"
+        izz="1.38903282713946E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_index_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_index_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.00517969929380135 0.0197412583235788 -0.00801899394956213"
+      rpy="-1.58685335591324 0 0" />
+    <parent
+      link="right_index_link_1" />
+    <child
+      link="right_index_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_link_0">
+    <inertial>
+      <origin
+        xyz="-0.00750128690090857 -0.00160458257642773 -0.0315488698187353"
+        rpy="0 0 0" />
+      <mass
+        value="0.0419935197366426" />
+      <inertia
+        ixx="9.32292746800048E-06"
+        ixy="3.20068095227979E-07"
+        ixz="-5.84129451799467E-07"
+        iyy="2.61224175482732E-05"
+        iyz="5.22364309267725E-07"
+        izz="1.93687904150889E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_joint_0"
+    type="revolute">
+    <origin
+      xyz="-0.015696 -0.022698 -0.0638"
+      rpy="0 0 0" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_middle_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.05236"
+      upper="1.0123"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_middle_link_1">
+    <inertial>
+      <origin
+        xyz="-0.00802195508995052 0.00468858254225593 -0.0333368087598445"
+        rpy="0 0 0" />
+      <mass
+        value="0.0238463286346948" />
+      <inertia
+        ixx="8.35997219181791E-06"
+        ixy="-3.06866345136988E-08"
+        ixz="5.60589901861149E-07"
+        iyy="1.53191208957754E-05"
+        iyz="1.57242299764974E-06"
+        izz="1.1407920251636E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.001325 0.0044875 -0.054817"
+      rpy="0 0 0" />
+    <parent
+      link="right_middle_link_0" />
+    <child
+      link="right_middle_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.05236"
+      upper="0.73304"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-3.86435476908975E-05 0.0199786316895396 0.00323567107396927"
+        rpy="0 0 0" />
+      <mass
+        value="0.00704184068430152" />
+      <inertia
+        ixx="1.12588385080778E-06"
+        ixy="5.16656168141639E-09"
+        ixz="1.40632474662186E-10"
+        iyy="3.3615339650214E-07"
+        iyz="-1.27210166705942E-09"
+        izz="1.3890328271664E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.0077463575114205 0.0195751100235614 -0.0183654920040708"
+      rpy="-1.58685335591347 0 0" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="-3.87035229723054E-05 0.0199786316895073 0.00323567107397363"
+        rpy="0 0 0" />
+      <mass
+        value="0.00704184068428023" />
+      <inertia
+        ixx="1.12588385080502E-06"
+        ixy="5.16656167997485E-09"
+        ixz="1.40632474848701E-10"
+        iyy="3.36153396501239E-07"
+        iyz="-1.27210166741502E-09"
+        izz="1.38903282716283E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_middle_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.0177735825133207 0.0195751100235676 -0.0183654920036283"
+      rpy="-1.58685335591347 0 0" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-0.000323799693063093 0.0407255688498069 0.000620610791926088"
+        rpy="0 0 0" />
+      <mass
+        value="0.0225085132560329" />
+      <inertia
+        ixx="1.25601250364215E-05"
+        ixy="6.62449632002129E-09"
+        ixz="1.61097817166603E-08"
+        iyy="2.0390392748392E-06"
+        iyz="-7.90359789016517E-08"
+        izz="1.43012683216895E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="0.039469 0.036826 -0.054256"
+      rpy="-3.1416 0.30999 -1.5709" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_palm_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_1">
+    <inertial>
+      <origin
+        xyz="-1.07947373842454E-05 0.0144139357472821 0.00326318989197508"
+        rpy="0 0 0" />
+      <mass
+        value="0.00537551452087825" />
+      <inertia
+        ixx="4.4209906154745E-07"
+        ixy="8.95803302820875E-10"
+        ixz="-2.40860089973154E-10"
+        iyy="2.79646927958818E-07"
+        iyz="-1.93468089510786E-09"
+        izz="6.69107457553165E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_1"
+    type="fixed">
+    <origin
+      xyz="-0.044513 0.068271 -0.050169"
+      rpy="-3.1416 0.30516 1.5708" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_palm_tactile_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_2">
+    <inertial>
+      <origin
+        xyz="-1.08002532350771E-05 0.0144139269646336 0.00326319026398689"
+        rpy="0 0 0" />
+      <mass
+        value="0.00537551465750316" />
+      <inertia
+        ixx="4.42099052614323E-07"
+        ixy="8.95830199931297E-10"
+        ixz="-2.4083764881702E-10"
+        iyy="2.79646940049748E-07"
+        iyz="-1.93462879434981E-09"
+        izz="6.69107466182061E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.030118 0.059715 -0.051063"
+      rpy="-2.1267 0.00025756 3.1416" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_palm_tactile_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_3">
+    <inertial>
+      <origin
+        xyz="0.000612945332611248 0.00781140017338267 0.00382834602033035"
+        rpy="0 0 0" />
+      <mass
+        value="0.00123652003413807" />
+      <inertia
+        ixx="3.28903600434983E-08"
+        ixy="-5.79124024002039E-10"
+        ixz="-1.01168459710389E-09"
+        iyy="1.91338148001676E-08"
+        iyz="6.26784906643295E-11"
+        izz="4.21698307770474E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://PXDEX_III_hand_urdf_description_right/meshes/right_palm_tactile_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_3"
+    type="fixed">
+    <origin
+      xyz="0.0223218917112809 0.0808772856016709 -0.0798995863617807"
+      rpy="-3.14159264581693 0.44675935601447 1.57079614652028" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_palm_tactile_link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

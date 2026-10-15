@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="pxcap_pro_right_description">
+  <link
+    name="right_palm_link">
+    <inertial>
+      <origin
+        xyz="0.00837840171548055 0.0211252026757234 -0.00446370913006383"
+        rpy="0 0 0" />
+      <mass
+        value="0.113206269798426" />
+      <inertia
+        ixx="4.58185745606413E-05"
+        ixy="-3.02891084209496E-06"
+        ixz="2.75135417268145E-06"
+        iyy="7.11616840368783E-05"
+        iyz="-2.00834165353144E-06"
+        izz="7.36532873503796E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_palm_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_palm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_index_link_0">
+    <inertial>
+      <origin
+        xyz="0.00034099830035234 7.75278244641254E-07 -0.00498968652692893"
+        rpy="0 0 0" />
+      <mass
+        value="0.000366159697377609" />
+      <inertia
+        ixx="5.88668152765265E-09"
+        ixy="3.43131517333747E-12"
+        ixz="7.0752026712131E-10"
+        iyy="4.37280564177016E-09"
+        iyz="1.6027704107931E-12"
+        izz="3.87502762569929E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tight_index_joint_0"
+    type="revolute">
+    <origin
+      xyz="-0.030782 0.061827 0.044672"
+      rpy="-2.9671 -0.00039371 -1.5686" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_index_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_index_link_1">
+    <inertial>
+      <origin
+        xyz="0.00422667963799929 -0.0257877987592128 -0.00705574665517899"
+        rpy="0 0 0" />
+      <mass
+        value="0.00298479489624152" />
+      <inertia
+        ixx="6.54450647471825E-07"
+        ixy="-3.13049642389784E-08"
+        ixz="-1.37391417928566E-08"
+        iyy="1.79656979259047E-07"
+        iyz="-1.50830060925653E-07"
+        izz="6.69668663785483E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tight_index_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.0008 0 -0.0062"
+      rpy="0 0 1.5731" />
+    <parent
+      link="right_index_link_0" />
+    <child
+      link="right_index_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_index_link_2">
+    <inertial>
+      <origin
+        xyz="-0.000754197951966291 0.00812773812048264 -0.0266603019894179"
+        rpy="0 0 0" />
+      <mass
+        value="0.00604573649750669" />
+      <inertia
+        ixx="1.41770154234504E-06"
+        ixy="6.93632017448783E-11"
+        ixz="-4.52928540289284E-10"
+        iyy="1.40090215702913E-06"
+        iyz="3.84573584046004E-07"
+        izz="5.5681665944673E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tight_index_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0007479 -0.036234 -0.018469"
+      rpy="0 0 0" />
+    <parent
+      link="right_index_link_1" />
+    <child
+      link="right_index_link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_index_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-4.16214883019409E-06 0.0401206786886959 0.0183321858334277"
+        rpy="0 0 0" />
+      <mass
+        value="0.00037970678876829" />
+      <inertia
+        ixx="6.88750067466336E-09"
+        ixy="-1.02735577529821E-11"
+        ixz="-1.02941756182747E-11"
+        iyy="1.72848681919783E-08"
+        iyz="-3.76344259779489E-10"
+        izz="1.32643974088945E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_index_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_index_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.00075000000000002 0 0"
+      rpy="-1.93570437515624 0 0" />
+    <parent
+      link="right_index_link_2" />
+    <child
+      link="right_index_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_middle_link_0">
+    <inertial>
+      <origin
+        xyz="0.000340999026625282 1.65732056828238E-08 -0.00498969415666934"
+        rpy="0 0 0" />
+      <mass
+        value="0.000366158122485276" />
+      <inertia
+        ixx="5.88667794826603E-09"
+        ixy="-7.23405194704394E-15"
+        ixz="7.07521219526508E-10"
+        iyy="4.3727915226575E-09"
+        iyz="-6.10642126281639E-15"
+        izz="3.87502318265376E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tight_middle_joint_0"
+    type="revolute">
+    <origin
+      xyz="-0.008782 0.061827 0.052672"
+      rpy="2.9147 0 -1.5708" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_middle_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_middle_link_1">
+    <inertial>
+      <origin
+        xyz="0.00422693888344062 -0.0257884806111885 -0.00705572120576447"
+        rpy="0 0 0" />
+      <mass
+        value="0.00298516870753711" />
+      <inertia
+        ixx="6.54465823988296E-07"
+        ixy="-3.12956862842446E-08"
+        ixz="-1.37403466401219E-08"
+        iyy="1.79663188266995E-07"
+        iyz="-1.50826256516419E-07"
+        izz="6.69689388710168E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tight_middle_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.0008 0 -0.0062"
+      rpy="0 0 1.5708" />
+    <parent
+      link="right_middle_link_0" />
+    <child
+      link="right_middle_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_middle_link_2">
+    <inertial>
+      <origin
+        xyz="-0.000754238506271918 0.00812779958411242 -0.026660607974461"
+        rpy="0 0 0" />
+      <mass
+        value="0.00604584249128565" />
+      <inertia
+        ixx="1.4177210682618E-06"
+        ixy="6.91117786067029E-11"
+        ixz="-4.61709096573652E-10"
+        iyy="1.40092077615932E-06"
+        iyz="3.84575875778667E-07"
+        izz="5.56814510673275E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tight_middle_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0007479 -0.036234 -0.018469"
+      rpy="0 0 0" />
+    <parent
+      link="right_middle_link_1" />
+    <child
+      link="right_middle_link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_middle_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-3.44101341585509E-06 0.0401204641472467 0.0183321308798864"
+        rpy="0 0 0" />
+      <mass
+        value="0.000379707165320258" />
+      <inertia
+        ixx="6.88752200196863E-09"
+        ixy="-9.80163091223601E-12"
+        ixz="-9.05138195575361E-12"
+        iyy="1.72847305528821E-08"
+        iyz="-3.76857773107545E-10"
+        izz="1.32646167994315E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_middle_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_middle_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.000750000000000025 0 0"
+      rpy="-1.93570437515624 0 0" />
+    <parent
+      link="right_middle_link_2" />
+    <child
+      link="right_middle_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_ring_link_0">
+    <inertial>
+      <origin
+        xyz="0.000341033395004115 -3.72004205217991E-09 -0.00498969721921923"
+        rpy="0 0 0" />
+      <mass
+        value="0.00036616229393785" />
+      <inertia
+        ixx="5.88666315883282E-09"
+        ixy="1.00270006299215E-14"
+        ixz="7.07526120440533E-10"
+        iyy="4.37283273366448E-09"
+        iyz="-3.96739929876667E-15"
+        izz="3.8750708602535E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.013218 0.061827 0.044672"
+      rpy="2.7053 0 -1.5708" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_ring_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_ring_link_1">
+    <inertial>
+      <origin
+        xyz="0.00422718623998114 -0.0257884736554587 -0.00705593170607977"
+        rpy="0 0 0" />
+      <mass
+        value="0.00298507675222296" />
+      <inertia
+        ixx="6.54450469583146E-07"
+        ixy="-3.12952339977124E-08"
+        ixz="-1.37399627085367E-08"
+        iyy="1.79666373142061E-07"
+        iyz="-1.50825357197802E-07"
+        izz="6.6968398486921E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.0008 0 -0.0062"
+      rpy="0 0 1.5708" />
+    <parent
+      link="right_ring_link_0" />
+    <child
+      link="right_ring_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_ring_link_2">
+    <inertial>
+      <origin
+        xyz="-0.000754192837907793 0.00812771232961734 -0.0266602050735807"
+        rpy="0 0 0" />
+      <mass
+        value="0.00604570869574441" />
+      <inertia
+        ixx="1.41769357780599E-06"
+        ixy="6.94702343155146E-11"
+        ixz="-4.49981551314401E-10"
+        iyy="1.4008952931912E-06"
+        iyz="3.84572124078607E-07"
+        izz="5.56818018144407E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0007479 -0.036234 -0.018469"
+      rpy="0 0 0" />
+    <parent
+      link="right_ring_link_1" />
+    <child
+      link="right_ring_link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_ring_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-2.722226736529E-06 0.0401212241826711 0.0183325723915707"
+        rpy="0 0 0" />
+      <mass
+        value="0.000379750157198461" />
+      <inertia
+        ixx="6.88656408194344E-09"
+        ixy="-1.04069384849935E-11"
+        ixz="-9.39313365660907E-12"
+        iyy="1.72852607662845E-08"
+        iyz="-3.75912991314674E-10"
+        izz="1.32655824146416E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_ring_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_ring_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.000749999999999952 0 0"
+      rpy="-1.93570437515624 0 0" />
+    <parent
+      link="right_ring_link_2" />
+    <child
+      link="right_ring_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_pinky_link_0">
+    <inertial>
+      <origin
+        xyz="0.000341027910786983 1.20136610382016E-09 -0.00498970432615266"
+        rpy="0 0 0" />
+      <mass
+        value="0.000366161348904753" />
+      <inertia
+        ixx="5.88665584654823E-09"
+        ixy="4.99468674047454E-15"
+        ixz="7.07535326625191E-10"
+        iyy="4.3728321387044E-09"
+        iyz="-6.28134347620324E-15"
+        izz="3.87507173641046E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_joint_0"
+    type="revolute">
+    <origin
+      xyz="0.031218 0.061827 0.033672"
+      rpy="2.3911 0 -1.5708" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_pinky_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_pinky_link_1">
+    <inertial>
+      <origin
+        xyz="0.00403570078271235 -0.021314579203123 -0.00821972008785523"
+        rpy="0 0 0" />
+      <mass
+        value="0.00286374703952867" />
+      <inertia
+        ixx="4.43299403021357E-07"
+        ixy="-1.06009402682511E-08"
+        ixz="-9.1152315038677E-09"
+        iyy="1.77050723437119E-07"
+        iyz="-1.31518068125926E-07"
+        izz="4.40679493314452E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_joint_1"
+    type="revolute">
+    <origin
+      xyz="0.0008 0 -0.0062"
+      rpy="0 0 1.5708" />
+    <parent
+      link="right_pinky_link_0" />
+    <child
+      link="right_pinky_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_pinky_link_2">
+    <inertial>
+      <origin
+        xyz="-0.000754228956990025 0.00812776540958936 -0.0266604807323459"
+        rpy="0 0 0" />
+      <mass
+        value="0.00604580556801869" />
+      <inertia
+        ixx="1.41771226363834E-06"
+        ixy="6.91779346636046E-11"
+        ixz="-4.58112542683209E-10"
+        iyy="1.40091296904006E-06"
+        iyz="3.84574296108249E-07"
+        izz="5.56815910858137E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0012271 -0.029633 -0.019988"
+      rpy="0 0 0" />
+    <parent
+      link="right_pinky_link_1" />
+    <child
+      link="right_pinky_link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_pinky_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-4.93979008739862E-05 0.0405226944026782 0.0183283279645398"
+        rpy="0 0 0" />
+      <mass
+        value="0.000469069842097519" />
+      <inertia
+        ixx="7.08899312229764E-09"
+        ixy="-4.50363134630994E-11"
+        ixz="-1.27113160598045E-10"
+        iyy="2.01535791419278E-08"
+        iyz="3.97060198657833E-10"
+        izz="1.66511033721722E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_pinky_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_pinky_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.000750000000000001 0 0"
+      rpy="-1.93570437517144 0 0" />
+    <parent
+      link="right_pinky_link_2" />
+    <child
+      link="right_pinky_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_thumb_link_0">
+    <inertial>
+      <origin
+        xyz="-0.00280510557223842 0.00572929294149479 2.02615701994091E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.000289063807725412" />
+      <inertia
+        ixx="4.84101576117723E-09"
+        ixy="1.0880574957656E-09"
+        ixz="-4.60317723320638E-22"
+        iyy="2.11989219775795E-09"
+        iyz="9.22912065226709E-22"
+        izz="4.96409302765948E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_joint_0"
+    type="revolute">
+    <origin
+      xyz="-0.020782 0.058127 0.029672"
+      rpy="-3.1416 0 -1.5708" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_thumb_link_0" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_thumb_link_1">
+    <inertial>
+      <origin
+        xyz="0.0039780869725772 -0.000137535661609199 -0.00649236989064967"
+        rpy="0 0 0" />
+      <mass
+        value="0.00119165276150485" />
+      <inertia
+        ixx="2.71618235343666E-08"
+        ixy="3.3238534635402E-10"
+        ixz="-3.34923054552789E-09"
+        iyy="4.08010652560614E-08"
+        iyz="-1.37417918282213E-10"
+        izz="2.96408178590423E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.0041 0.008 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="right_thumb_link_0" />
+    <child
+      link="right_thumb_link_1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_thumb_link_2">
+    <inertial>
+      <origin
+        xyz="0.00726841517924323 1.16822060207064E-06 -9.04290204216153E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.00034848946776838" />
+      <inertia
+        ixx="4.06269488054694E-09"
+        ixy="1.05631909264714E-13"
+        ixz="-7.10973582012769E-11"
+        iyy="4.75087863182689E-09"
+        iyz="-8.2954790516297E-13"
+        izz="2.99954357827627E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.00875"
+      rpy="0 1.5708 0" />
+    <parent
+      link="right_thumb_link_1" />
+    <child
+      link="right_thumb_link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_thumb_link_3">
+    <inertial>
+      <origin
+        xyz="0.00132264798494782 -0.0232022975717541 -0.00707629962177414"
+        rpy="0 0 0" />
+      <mass
+        value="0.003921228192837" />
+      <inertia
+        ixx="7.57926786022568E-07"
+        ixy="5.00090253308173E-09"
+        ixz="-6.01063711210697E-10"
+        iyy="3.2676758484635E-07"
+        iyz="-1.93538019375908E-07"
+        izz="8.72658286898543E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_joint_3"
+    type="revolute">
+    <origin
+      xyz="0.008 0 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="right_thumb_link_2" />
+    <child
+      link="right_thumb_link_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_thumb_link_4">
+    <inertial>
+      <origin
+        xyz="-0.00500304937373148 0.0164778949389879 -0.0223839255552556"
+        rpy="0 0 0" />
+      <mass
+        value="0.00812543070594011" />
+      <inertia
+        ixx="1.94204400599077E-06"
+        ixy="3.76107353552502E-11"
+        ixz="6.2899150342832E-11"
+        iyy="1.54693539135021E-06"
+        iyz="6.98361850037683E-07"
+        izz="1.28303975176677E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_joint_4"
+    type="revolute">
+    <origin
+      xyz="0.004983 -0.03432 -0.018946"
+      rpy="0 0 0" />
+    <parent
+      link="right_thumb_link_3" />
+    <child
+      link="right_thumb_link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-1.5707"
+      upper="1.5707"
+      effort="1"
+      velocity="10" />
+  </joint>
+  <link
+    name="right_thumb_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="-0.000122594929675094 0.0366842375208402 0.0181826023619899"
+        rpy="0 0 0" />
+      <mass
+        value="0.000539184384593977" />
+      <inertia
+        ixx="1.57308860034603E-08"
+        ixy="8.05678489476045E-11"
+        ixz="9.91963423626367E-11"
+        iyy="3.34287101375402E-08"
+        iyz="-5.44689565781551E-09"
+        izz="2.86333095526934E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_thumb_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_thumb_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.0050002 0 0"
+      rpy="-1.6602 0 0" />
+    <parent
+      link="right_thumb_link_4" />
+    <child
+      link="right_thumb_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="right_palm_tactile_link_0">
+    <inertial>
+      <origin
+        xyz="1.49422263156299E-05 0.0122714640932922 0.00582479212436728"
+        rpy="0 0 0" />
+      <mass
+        value="0.00317685661573601" />
+      <inertia
+        ixx="9.16836357185639E-08"
+        ixy="-5.71057961910243E-11"
+        ixz="3.57086587021544E-11"
+        iyy="5.62042921888456E-07"
+        iyz="6.32283738364336E-10"
+        izz="6.46388458360427E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_palm_tactile_link_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pxcap_pro_right_description/meshes/right_palm_tactile_link_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_palm_tactile_joint_0"
+    type="fixed">
+    <origin
+      xyz="-0.00076057 0.061127 0.0198"
+      rpy="1.5708 -0.43633 3.1416" />
+    <parent
+      link="right_palm_link" />
+    <child
+      link="right_palm_tactile_link_0" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
